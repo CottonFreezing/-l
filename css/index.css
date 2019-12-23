@@ -1,0 +1,383 @@
+.fs {
+	height: 480px;
+	background-color: #EAEAEA;
+	margin-bottom: 30px;
+	position: relative;
+	
+}
+a {
+	cursor: pointer;
+}
+
+.fs_inner {
+	height: 480px;
+	position: relative;
+	z-index: 1;
+	
+}
+.ad {
+	height: 480px;
+	background: url(../img/bg.png) no-repeat top center;
+	position: absolute;
+	top: 0;
+	width: 100%;/*一定要写,position会转换为行内块根据内容多少决定宽度*/
+	left: 0;
+}
+.ad a {
+	display: block;
+	height: 100%;
+}
+.inner_left, .inner_right, .inner_middle {
+	float: left;
+	height: 480px;
+	
+	
+}
+.inner_left {
+	width: 190px;
+	margin-right: 10px;
+}
+.inner_middle {
+	width: 790px;
+	margin-right: 10px;
+	
+}
+.inner_right {
+	width: 190px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.inner_left_cate {
+	margin-top: 10px;
+	
+}
+.cate_menu {
+	padding: 10px 0;
+	background-color: #fefefe;
+	height: 450px;
+	font-size: 14px;
+	
+}
+.cate_menu li{
+	display: block;
+	height: 25px;
+	padding-left: 15px;
+	line-height: 25px;
+	
+}
+.cate_menu li a{
+	color: #333;
+}
+.cate_menu a:hover {
+	color: #f10215;
+}
+.fs span {
+	font-size: 12px;
+	color: #D4CDCD;
+	margin: 0 1px;
+
+}
+.middle_slider {
+	width: 790px;
+	height: 470px;
+	margin-top: 10px;
+	
+	
+}
+.slider_L, .slider_R{
+	position: relative;
+	float: left;
+	
+}
+.slider_L {
+	
+	width: 590px;
+	height: 470px;
+	margin-right: 10px;
+}
+
+.icon_L {
+	font-family: "icomoon";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	background-color: rgba(0,0,0,.15);
+	width: 25px;
+    height: 35px;
+    line-height: 35px;
+	margin-top: -20px;
+    font-size: 20px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.icon_L i {
+	position: absolute;
+	display: block;
+	left: -1px;
+	width: 100%;
+	height: 100%;
+	color: rgba(255,255,255,.8); 
+	font-style: normal; 
+}	
+.icon_R {
+	font-family: "icomoon";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	background-color: rgba(0,0,0,.15);
+	width: 25px;
+	height: 35px;
+	line-height: 35px;
+	margin-top: -20px;
+	font-size: 20px;
+	border-top-left-radius: 18px;
+	border-bottom-left-radius: 18px;
+	
+}
+.icon_R i {
+	position: absolute;
+	display: block;
+	right: -5px;
+	width: 100%;
+	height: 100%;
+	color: rgba(255,255,255,.8);
+	font-style: normal;
+}	
+.icon_L:hover, .icon_R:hover {
+	background-color: rgba(0,0,0,.5);
+}  
+
+.slider_L ol {
+	position: absolute;
+	z-index: 2;
+	margin-left: 0!important;
+    left: 30px;
+    bottom: 20px;
+    
+}
+.slider_L ol li {
+	float: left;
+	width: 9px;
+    height: 9px;
+    margin-right: 4px;
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 50% ;
+    background: rgba(255,255,255,.7);
+    cursor: default;
+}
+.slider_R {
+	width: 190px;
+	
+}
+.ad1,.ad2{
+	position: relative;
+	display: block; 
+	height: 150px;
+	margin-bottom: 10px;
+	
+}
+.ad3 {
+	display: block;
+	position: relative;
+	height: 150px;
+}
+
+.slider_R a img {
+	width: 100%;
+	height: 100%;
+	
+}
+.slider_R .icon_L,.slider_R .icon_R {
+	opacity: 0;
+    visibility: hidden
+}
+.user {
+	position: relative;
+	height: 102px;
+	margin-top: 10px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.user_inner {
+	position: relative;
+	padding-top: 57px;
+	height: 35px;
+
+	
+}
+.user_head {
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	left: 20px;
+	top: 13px;
+
+}
+.user_head a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	overflow: hidden;
+	background-color: #fff;
+}
+.user_head_p {
+	display: block;
+	border: 0;
+	vertical-align: middle;
+	width: 100%;
+}
+.user_login {
+	position: absolute;
+	top: 16px;
+	left: 74px;
+	right: 10px;
+
+}
+.user_login a {
+	color: #666;
+	font-size: 12px;
+}
+.user_login a:hover {
+	color: #F10215;
+}
+.user_login p a {
+	overflow: hidden;
+	color: #333333;
+	height: 20px;
+	line-height: 20px;
+	width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	
+}
+.user_profit{
+	height: 25px;
+	text-align: center;
+	margin-top: 8px;
+}
+.user_profit .fuli {
+	
+	display: inline-block;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #e1251b;
+	border-radius: 13px;
+	margin: 0 5px;
+}
+.user_profit .huiyuan {
+	display: inline-block;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #363634;
+	border-radius: 13px;
+	margin: 0 5px;
+}
+.huiyuan:hover, .fuli:hover {
+	background-color: #C81623;
+}
+.news {
+	position: relative;
+	height: 125px;
+
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	padding: 5px 15px 0;
+	
+}
+.tab_hd {
+	position: relative;
+	border: 1px solid #ccc;
+	padding: 3px 0;
+	
+}
+.tab_hd a {
+	font-size: 12px;
+	color: #747474;
+	margin: 0 4px;
+}
+.chuxiao {
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+}
+.news .more1 {
+	position: absolute;
+	top: 6px;
+	right: 0;
+}
+.line {
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 28px;
+	height: 2px;
+	background-color: #F10215;
+}
+
+.tab_bd {
+	margin-top: 10px;
+}
+.tab_bd li {
+	font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #999;
+    margin-bottom: 6px;
+}
+.tab_bd li a {
+	color: #666;
+}
+.tab_bd li a:hover {
+	color: #F10215;
+}
+.r_service {
+	position: relative;
+	height: 238px;
+
+}
+.service_entry {
+	padding: 5px .5px;
+	overflow: hidden;
+}
+.service_entry ul {
+	height: 225px;
+	padding-top: 5px;
+}
+.service_entry ul li {
+	overflow: visible;
+	position: relative;
+    float: left;
+    width: 63px;
+    height: 55px;
+    background: #fff;
+    text-align: center;
+    
+}
+.service_entry a i {
+	display: block;
+	position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+
+}
+.service_entry a span {
+	display: block;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 2px solid #fff;
+    color: #333;
+}
+.service_entry a span:hover {
+	color: #F10215;
+}
